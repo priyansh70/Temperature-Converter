@@ -127,6 +127,7 @@ input::-webkit-inner-spin-button {
 
     .converter-row {
         flex-direction: column;
+        width:65%;
     }
 
     .container a
