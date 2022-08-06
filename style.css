@@ -143,5 +143,8 @@ input::-webkit-inner-spin-button {
         background: #fff;
         border: transparent;
     }
-    
+    .converter-row .equal
+    {
+        margin-bottom: 10px;
+    }
 }
