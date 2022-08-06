@@ -161,3 +161,18 @@ input::-webkit-inner-spin-button {
         margin-left: 10px;
     }
 }
+
+@media screen and (max-width: 1220px) and (min-width:901px){
+    .converter-row
+    {
+        width: 70vw;
+    }
+
+    .container a
+    {
+        top: auto;
+        bottom: 8%;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+}
