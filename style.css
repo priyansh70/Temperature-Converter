@@ -149,3 +149,15 @@ input::-webkit-inner-spin-button {
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 330px)
+{
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .container h1 i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
