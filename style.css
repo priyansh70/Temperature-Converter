@@ -133,7 +133,8 @@ input::-webkit-inner-spin-button {
     .container a
     {
         top: auto;
-        bottom: 10%;
+        bottom: 7%;
+        position: absolute;
         left: 52%;
         transform: translateX(-50%);
     }
