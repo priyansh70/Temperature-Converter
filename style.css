@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(3, 2, 4, 0.7), rgba(3, 2, 4, 0.7)), url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.container h1 i {
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.converter-row {
+    display: flex;
+    margin-top: 5%;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF8DC;
+    border-radius: 10px;
+    padding: 50px 20px;
+    transition: 1s;
+}
+
+.converter-row:hover {
+    box-shadow: 0px 0px 10px 1px #e4e71b, 0px 0px 10px 1px #e09016;
+}
+
+.converter-row .equal {
+    margin-top: 20px;
+}
+
+.col {
+    flex-basis: 35%;
+    text-align: center;
+}
+
+.col label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.col label i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.col input {
+    outline: none;
+    border: 1px solid rgb(160, 157, 157);
+    width: 150px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.col input:hover {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3), -1px -1px 5px 1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    border: transparent;
+}
+
+.container a {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.container a i {
+    background-color: #8a3ab9;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.container a::after {
+    content: '';
+    background: #8a3ab9;
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.container a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .container h1 i {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .converter-row {
+        flex-direction: column;
+    }
+
+    .container a
+    {
+        top: auto;
+        bottom: 10%;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .col input:hover {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3), -1px -1px 5px 1px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        border: transparent;
+    }
+    
+}
