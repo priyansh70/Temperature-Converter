@@ -86,35 +86,6 @@ input::-webkit-inner-spin-button {
     background: #fff;
     border: transparent;
 }
-
-.container a {
-    position: fixed;
-    top: 50%;
-    right: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.container a i {
-    background-color: #8a3ab9;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.container a::after {
-    content: '';
-    background: #8a3ab9;
-    width: 0%;
-    height: 2px;
-    display: block;
-    transition: 0.5s;
-    margin: auto;
-}
-
-.container a:hover::after {
-    width: 100%;
-}
-
 @media screen and (max-width:700px) {
     .container h1 {
         font-size: 25px;
@@ -128,15 +99,6 @@ input::-webkit-inner-spin-button {
     .converter-row {
         flex-direction: column;
         width:50%;
-    }
-
-    .container a
-    {
-        top: auto;
-        bottom: 10%;
-        position: absolute;
-        left: 52%;
-        transform: translateX(-50%);
     }
 
     .col input:hover {
@@ -166,13 +128,5 @@ input::-webkit-inner-spin-button {
     .converter-row
     {
         width: 70vw;
-    }
-
-    .container a
-    {
-        top: auto;
-        bottom: 8%;
-        left: 52%;
-        transform: translateX(-50%);
     }
 }
